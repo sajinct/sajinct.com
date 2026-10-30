@@ -32,3 +32,13 @@ For a different deployment address, set `SITE_URL` when building. Without it, me
 - `assets/`: favicon and existing social preview image
 
 The `.openai/hosting.json` file records the separate private Sites review deployment; GitHub Pages does not use it.
+
+## RustDesk download
+
+The unmodified official RustDesk 1.5.0 installer for Windows 64-bit is hosted at
+[rustdesk-1.5.0-x86_64.exe](https://sajinct.com/assets/rustdesk-1.5.0-x86_64.exe).
+The existing build copies it from `assets/` into the published site.
+
+- Official release: https://github.com/rustdesk/rustdesk/releases/tag/1.5.0
+- Source and license information: [assets/rustdesk-1.5.0-source.txt](assets/rustdesk-1.5.0-source.txt)
+- SHA-256: `8555777215510d83d2d61c9dc984e4fcc838bd7e79f9d18a42585431f5e8bb47`
