@@ -33,7 +33,15 @@ For a different deployment address, set `SITE_URL` when building. Without it, me
 
 The `.openai/hosting.json` file records the separate private Sites review deployment; GitHub Pages does not use it.
 
-## RustDesk download
+## RustDesk downloads
+
+### Inzoft installer bundle
+
+[Download Inzoft-RustDesk.zip](https://sajinct.com/assets/Inzoft-RustDesk.zip).
+This is the original provided ZIP, including `Install.cmd`, the installer configured
+for Inzoft, its README, license, and verification information.
+
+### Official installer
 
 The unmodified official RustDesk 1.5.0 installer for Windows 64-bit is hosted at
 [rustdesk-1.5.0-x86_64.exe](https://sajinct.com/assets/rustdesk-1.5.0-x86_64.exe).
