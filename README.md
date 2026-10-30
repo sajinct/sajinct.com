@@ -35,11 +35,47 @@ The `.openai/hosting.json` file records the separate private Sites review deploy
 
 ## RustDesk downloads
 
-### Inzoft installer bundle
+### Recommended: single vendor-signed Inzoft installer
+
+[Download the single EXE](https://sajinct.com/assets/rustdesk-host%3Drustdesk.inzoft.com%2Ckey%3D1tReBzyI0r45BmcCQf5XvZsGQldYOklYNjmtHUrI6tI%3D%2C-install.exe).
+
+This is the unmodified official RustDesk 1.5.0 Windows x64 executable, with a valid
+**PURSLANE** vendor signature. Its filename configures `rustdesk.inzoft.com` and
+the server public key automatically. **Keep the complete downloaded filename**
+until installation finishes. Run the EXE and complete the standard installation;
+no ZIP or command script is needed. The server supplies the relay address.
+
+If an existing installation has an explicit old Relay Server value, clear it or
+set it to `rustdesk.inzoft.com:21117`. Test a full installation and remote session
+on a Windows test computer before wider distribution. Signing does not guarantee
+the absence of SmartScreen warnings.
+
+The EXE's SHA-256 is
+`8555777215510d83d2d61c9dc984e4fcc838bd7e79f9d18a42585431f5e8bb47`.
+It matches the official original binary; only its filename differs.
+
+### Optional ZIP bundle
 
 [Download Inzoft-RustDesk.zip](https://sajinct.com/assets/Inzoft-RustDesk.zip).
-This is the original provided ZIP, including `Install.cmd`, the installer configured
-for Inzoft, its README, license, and verification information.
+This ZIP contains the unmodified official RustDesk Windows x64 installer, configured
+for `rustdesk.inzoft.com` through its filename. The executable retains its valid
+**PURSLANE** vendor signature. The ZIP itself and the optional command launcher are
+not Authenticode-signed. No additional signing certificate or subscription is required.
+
+Extract the entire ZIP, run the included EXE (or `Install.cmd`), and complete the
+standard installation. **Keep the EXE filename unchanged** until installation finishes;
+its name supplies the hostname and public key. The ID server supplies the relay
+address automatically. Existing installations with an explicit old relay address
+should have that field cleared or changed to `rustdesk.inzoft.com:21117`.
+
+The bundle includes instructions, the upstream licence, and verification information.
+Its ZIP checksum is recorded in [assets/Inzoft-RustDesk.sha256](assets/Inzoft-RustDesk.sha256).
+The bundled executable's signature, publisher, checksum, and configuration were
+reverified on 30 October 2026. A complete Windows installation and remote session
+still need testing. Signing does not guarantee the absence of SmartScreen warnings.
+
+The custom unsigned setup prototype and its source are retained locally outside
+public assets. The selected download is the single vendor-signed EXE above.
 
 ### Official installer
 
